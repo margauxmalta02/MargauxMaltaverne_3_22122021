@@ -1,0 +1,9 @@
+{
+    "name": "projet3",
+    "version": "1.0.0",
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+    },
+    "author": "",
+    "license": "ISC"
+}
