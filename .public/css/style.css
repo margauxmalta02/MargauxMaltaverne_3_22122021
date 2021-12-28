@@ -1,5 +1,44 @@
-h1 {
-  color: red;
+h1, img {
+  font-family: shrikhand;
+}
+
+h2, p {
+  font-family: roboto;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("https://github.com/jonpinhorn/shrikhand") format(truetype);
+  src: url("https://www.fontsquirrel.com/license/roboto") format(truetype);
+}
+.header {
+  display: block;
+  margin: auto;
+}
+
+.header {
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 414px) {
+  .header {
+    display: block;
+    margin: auto;
+  }
+
+  /* HEADER */
+  /* SEARCH */
+  /*RESTAURANTS */
+  /* FOOTER */
 }
 
 /*# sourceMappingURL=style.css.map */
