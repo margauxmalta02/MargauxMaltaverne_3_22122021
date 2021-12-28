@@ -1,22 +1,35 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="sass/base/base.scss">
+    <link rel="stylesheet" href="sass/base/typography.scss">
+    <link rel="stylesheet" href="sass/components/buttons.scss">
+    <link rel="stylesheet" href="sass/layouts/container.scss">
+    <link rel="stylesheet" href="sass/layouts/form.scss">
+    <link rel="stylesheet" href="sass/layouts/header.scss">
+    <link rel="stylesheet" href="sass/layouts/nav.scss">
+    <link rel="stylesheet" href="sass/main.scss">
+    <link rel="stylesheet" href="sass/pages/about.scss">
+    <link rel="stylesheet" href="sass/pages/project.scss">
+    <link rel="stylesheet" href="sass/pages/work.scss">
+    <link rel="stylesheet" href="sass/themes/themes.scss">
+    <link rel="stylesheet" href="sass/utils/extensions.scss">
+    <link rel="stylesheet" href="sass/utils/functions.scss">
+    <link rel="stylesheet" href="sass/utils/mixins.scss">
+    <link rel="stylesheet" href="sass/utils/variables.scss">
+    <link rel="stylesheet" href="sass/vendors/vendors.scss">
     <script src="https://kit.fontawesome.com/dd88d6c051.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="sass/base/base.scss" />
-    <link rel="stylesheet" href="sass/composants/composants.scss"/>
-    <link rel="stylesheet" href="sass/layouts/layouts.scss"/>
-    <link rel="stylesheet" href="sass/pages/pages.scss"/>
-    <link rel="stylesheet" href="sass/themes/themes.scss"/>
-    <link rel="stylesheet" href="sass/utils/variables.scss"/>
-    <link rel="stylesheet" href="sass/vendors/vendors.scss"/>
-
 </head>
 
 <body>
     <header>
-        <img class="logo" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png">
+        <img class="logo" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo" >
     </header>
     <div id="searchbar">
         <i class="fa-solid fa-location-dot"></i>
@@ -31,38 +44,34 @@
         <p>
             Découvrez des restaurants d'exception, séléctionnés par nos soins.
         </p>
-        <!-- TODO: vérifier si c'est un boutton ou un lien -->
-        <a href="#">
-            <input class="button" type="button" value="Explorer nos restaurants" />
-        </a>
+        <input class="buttonviolet" type="button" value="Explorer nos restaurants" />
     </div>
     <div id="fonctionnement">
         <h2>
             Fonctionnement
         </h2>
-        <a href="#">
-            <p>1</p>
+        <p>1</p>
+        <div>
             <i class="fas fa-mobile-alt"></i>
-            <input class="button" type="button" value="Choississez un restaurants" />
-        </a>
-        <a href="#">
-            <p>2</p>
+            <p>Choississez un restaurants</p>
+        </div>
+        <p>2</p>
+        <div>
             <i class="fas fa-list"></i>
-            <input class="button" type="button" value="Composez votre menu" />
-        </a>
-        <a href="#">
-            <p>3</p>
+            <p>Composez votre menu</p>
+        </div>>
+        <p>3</p>
+        <div>
             <i class="fas fa-store"></i>
-            <input class="button" type="button" value="Dégustez au restaurant" />
-        </a>
+            Dégustez au restaurant
+        </div>>
     </div>
-    <div id="restaurants">
+    <div class="principal">
         <h2>
             Restaurant
         </h2>
         <article>
-            <img
-            src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" />
+            <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay wennington">
             <a href="file:///C:/Users/margaux/Desktop/OPENCLASSROOM/P3/la%20palette%20du%20gout.html">
                 <h2>
                     Les palettes du goût
@@ -74,7 +83,7 @@
             </a>
         </article>
         <article>
-            <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" />
+            <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant still">
             <a href="file:///C:/Users/margaux/Desktop/OPENCLASSROOM/P3/la%20note%20enchantee.html">
                 <h2>
                     La note enchantée
@@ -88,7 +97,7 @@
         
         <article>
             
-            <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" />
+            <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toa heftiba">
             
             <a href="file:///C:/Users/margaux/Desktop/OPENCLASSROOM/P3/A%20la%20francaise.html">
                 <h2>
@@ -101,8 +110,7 @@
             <i class="far fa-heart"></i>
         </article>
         <article>
-            <img
-            src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" />
+            <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="louis hansel">
             
             <a href="file:///C:/Users/margaux/Desktop/OPENCLASSROOM/P3/Le%20delice%20des%20sens.html">
                 <h2>
@@ -115,8 +123,9 @@
             <i class="far fa-heart"></i>
         </article>
     </div>
+    
     <footer>
-        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png">
+        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo">
         <ul>
             <li>
                 <i class="fas fa-utensils"></i>

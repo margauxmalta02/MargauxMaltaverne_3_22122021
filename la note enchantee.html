@@ -1,101 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>la note enchantée</title>
+    <link rel="stylesheet" href="sass/base/base.scss">
+    <link rel="stylesheet" href="sass/base/typography.scss">
+    <link rel="stylesheet" href="sass/components/buttons.scss">
+    <link rel="stylesheet" href="sass/layouts/container.scss">
+    <link rel="stylesheet" href="sass/layouts/form.scss">
+    <link rel="stylesheet" href="sass/layouts/header.scss">
+    <link rel="stylesheet" href="sass/layouts/nav.scss">
+    <link rel="stylesheet" href="sass/main.scss">
+    <link rel="stylesheet" href="sass/pages/about.scss">
+    <link rel="stylesheet" href="sass/pages/project.scss">
+    <link rel="stylesheet" href="sass/pages/work.scss">
+    <link rel="stylesheet" href="sass/themes/themes.scss">
+    <link rel="stylesheet" href="sass/utils/extensions.scss">
+    <link rel="stylesheet" href="sass/utils/functions.scss">
+    <link rel="stylesheet" href="sass/utils/mixins.scss">
+    <link rel="stylesheet" href="sass/utils/variables.scss">
+    <link rel="stylesheet" href="sass/vendors/vendors.scss">
     <script src="https://kit.fontawesome.com/dd88d6c051.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="sass/base/base.scss" />
-    <link rel="stylesheet" href="sass/composants/composants.scss"/>
-    <link rel="stylesheet" href="sass/layouts/layouts.scss"/>
-    <link rel="stylesheet" href="sass/pages/pages.scss"/>
-    <link rel="stylesheet" href="sass/themes/themes.scss"/>
-    <link rel="stylesheet" href="sass/utils/variables.scss"/>
-    <link rel="stylesheet" href="sass/vendors/vendors.scss"/>
 </head>
+
 <body>
     <header>
         <img class="logo" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png">
     </header>
     
     <div id="entete">
-        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="logo">
     </div>
-    <div id="menu">
+    <div class="principal">
         <h1>
             La note enchantée
         </h1>
         <i class="far fa-heart"></i>
         <h3>Entrées</h3>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Ravioles de foie gras</span>
             <span class="description">Accompagnés de leur crème à la truffe</span>
-            25€
+            <span class="prix">25€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Caviar osciètre</span>
             <span class="description">Sur blini à la farine de blé noir</span>
-            35€
+            <span class="prix">35€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Homard et espuma de potiron</span>
             <span class="description">Mariné aux zestes d'orange</span>
-            20€
+            <span class="prix">20€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Foie gras de canard cuit entier</span>
             <span class="description">Confiture de figue et pain toasté</span>
-            35€
+            <span class="prix">35€</span>
         </div>
         <h3>Plats</h3>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Noix de coquilles Saint-Jacques</span>
             <span class="description">Sur lit de purée de céleri-rave</span>
-        </p>
-        40€
+            <span class="prix">40€</span>
+        </div>
+        <div class="plats">
+            <span class="titrerecette">Langoustine poêlée</span>
+            <span class="description">Purée de patate douce</span>
+            <span class="prix">35€</span>
+        </div>
+        <div class="plats">
+            <span class="titrerecette">Mijoté de queue de boeuf</span>
+            <span class="description">Et riz sauvage aux zestes de citron</span>
+            <span class="prix">44€</span>
+        </div>
+        <h3>Desserts</h3>
+        <div class="plats">
+            <span class="titrerecette">Macaron noisette et chocolat</span>
+            <span class="description">Glace au caramel brun et sel de Guérande</span>
+            <span class="prix">18€</span>
+        </div>
+        <div class="plats">
+            <span class="titrerecette">Baba au rhum revisité</span>
+            <span class="description">Avec son coulis de citron</span>
+            <span class="prix">22€</span>
+        </div>
+        <div class="plats">
+            <span class="titrerecette">Tarte au citron meringuée</span>
+            <span class="description">Déstructurée</span>
+            <span class="prix">23€</span>
+        </div>
+        <input class="buttonviolet" type="button" value="Commander" />
     </div>
-    <div classe=plats>
-        <span class="titrerecette">Langoustine poêlée</span>
-        <span class="description">Purée de patate douce</span>
-        35€
-    </div>
-    <div classe=plats>
-        <span class="titrerecette">Mijoté de queue de boeuf</span>
-        <span class="description">Et riz sauvage aux zestes de citron</span>
-        44€
-    </div>
-    <h3>Desserts</h3>
-    <div classe=plats>
-        <span class="titrerecette">Macaron noisette et chocolat</span>
-        <span class="description">Glace au caramel brun et sel de Guérande</span>
-        18€
-    </div>
-    <div classe=plats>
-        <span class="titrerecette">Baba au rhum revisité</span>
-        <span class="description">Avec son coulis de citron</span>
-        22€
-    </div>
-    <div classe=plats>
-        <span class="titrerecette">Tarte au citron meringuée</span>
-        <span class="description">Déstructurée</span>
-        23€
-    </div>
-</div>
-<footer>hj
-    <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png">
-    <ul>
-        <li>
-            <i class="fas fa-utensils"></i>
-            Proposer un restaurant
-        </li>
-        <li>
-            <i class="fas fa-handshake"></i>
-            Devenir partenaire
-        </li>
-        <li>
-            Mentions légales
-        </li>
-        <li>
-            Contact
-        </li>
-    </ul>
-</footer>
+    <footer>
+        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png " alt="logo">
+        <ul>
+            <li>
+                <i class="fas fa-utensils"></i>
+                Proposer un restaurant
+            </li>
+            <li>
+                <i class="fas fa-handshake"></i>
+                Devenir partenaire
+            </li>
+            <li>
+                Mentions légales
+            </li>
+            <li>
+                Contact
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>

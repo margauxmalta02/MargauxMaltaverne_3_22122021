@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>la palette du gout</title>
+    <link rel="stylesheet" href="sass/base/base.scss">
+    <link rel="stylesheet" href="sass/base/typography.scss">
+    <link rel="stylesheet" href="sass/components/buttons.scss">
+    <link rel="stylesheet" href="sass/layouts/container.scss">
+    <link rel="stylesheet" href="sass/layouts/form.scss">
+    <link rel="stylesheet" href="sass/layouts/header.scss">
+    <link rel="stylesheet" href="sass/layouts/nav.scss">
+    <link rel="stylesheet" href="sass/main.scss">
+    <link rel="stylesheet" href="sass/pages/about.scss">
+    <link rel="stylesheet" href="sass/pages/project.scss">
+    <link rel="stylesheet" href="sass/pages/work.scss">
+    <link rel="stylesheet" href="sass/themes/themes.scss">
+    <link rel="stylesheet" href="sass/utils/extensions.scss">
+    <link rel="stylesheet" href="sass/utils/functions.scss">
+    <link rel="stylesheet" href="sass/utils/mixins.scss">
+    <link rel="stylesheet" href="sass/utils/variables.scss">
+    <link rel="stylesheet" href="sass/vendors/vendors.scss">
     <script src="https://kit.fontawesome.com/dd88d6c051.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="sass/base/base.scss" />
-    <link rel="stylesheet" href="sass/composants/composants.scss"/>
-    <link rel="stylesheet" href="sass/layouts/layouts.scss"/>
-    <link rel="stylesheet" href="sass/pages/pages.scss"/>
-    <link rel="stylesheet" href="sass/themes/themes.scss"/>
-    <link rel="stylesheet" href="sass/utils/variables.scss"/>
-    <link rel="stylesheet" href="sass/vendors/vendors.scss"/>
 </head>
 <body>
     <header>
-        <img class="logo" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png">
+        <img class="logo" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo">
     </header>
     <div id="entete">
-        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay wennington">
     </div>
-    <div id="menu">
+    <div class="principal">
         <h1>
             La palette du goût
         </h1>
@@ -26,69 +40,70 @@
         <div class="plats">
             <span class="titrerecette">Fricassée d'escargot</span>
             <span class="description">Au piment d'Espelette</span>
-            25€
+            <span class="prix">25€</span>
         </div>
         <div class="plats">
             <span class="titrerecette">Foie gras de canard mi-cuit</span>
             <span class="description">Et ses copeaux de truffe noire</span>
-            35€
+            <span class="prix">35€</span>
         </div>
         <div class="plats">
             <span class="titrerecette">Oeuf au plats</span>
             <span class="description"> Assaisonné à la truffe sur lit de caviar</span>
-            20€
+            <span class="prix">20€</span>
         </div>
         <h3>Plats</h3>
         <div class="plats">
             <span class="titrerecette">Filet de boeuf aux herbes</span>
             <span class="description">Accompagné de sa ribambelle de légumes</span>
-            40€
+            <span class="prix">40€</span>
         </div>
         <div class="plats">
             <span class="titrerecette">Parmentier de queue de boeuf</span>
             <span class="description">À la truffe noire sur sa purée de panais</span>
-            35€
+            <span class="prix">35€</span>
         </div>
         <div class="plats">
             <span class="titrerecette">Filet de turbot</span>
             <span class="description">Aux agrumes</span>
-            44€
+            <span class="prix">44€</span>
         </div>
         <h3>Desserts</h3>
         <div class="plats">
             <span class="titrerecette">Paris-Brest</span>
             <span class="description">Revisité</span>
-            18€
+            <span class="prix">18€</span>
         </div>
         <div class="plats">
             <span class="titrerecette">Macaron au chocolat d'exception</span>
             <span class=description>Et glace à la vanille de Madagascar</span>
-            22€
+            <span class="prix">22€</span>
         </div>
         <div class="plats">
             <span class="titrerecette">Mousse au chocolat</span>
             <span class=description>Au piment d'Espelette et à la truffe noire</span>
-            23€
-            
+            <span class="prix">23€</span>
         </div>
-        <footer>
-            <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png">
-            <ul>
-                <li>
-                    <i class="fas fa-utensils"></i>
-                    Proposer un restaurant
-                </li>
-                <li>
-                    <i class="fas fa-handshake"></i>
-                    Devenir partenaire
-                </li>
-                <li>
-                    Mentions légales
-                </li>
-                <li>
-                    Contact
-                </li>
-            </ul>
-        </footer>
-    </body>
-    </html>
+        <input class="buttonviolet" type="button" value="Commander" />
+    </div>
+    <footer>
+        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo">
+        <ul>
+            <li>
+                <i class="fas fa-utensils"></i>
+                Proposer un restaurant
+            </li>
+            <li>
+                <i class="fas fa-handshake"></i>
+                Devenir partenaire
+            </li>
+            <li>
+                Mentions légales
+            </li>
+            <li>
+                Contact
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

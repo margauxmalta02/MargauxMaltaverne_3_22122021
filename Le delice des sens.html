@@ -1,79 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>le delice des sens</title>
+    <link rel="stylesheet" href="sass/base/base.scss">
+    <link rel="stylesheet" href="sass/base/typography.scss">
+    <link rel="stylesheet" href="sass/components/buttons.scss">
+    <link rel="stylesheet" href="sass/layouts/container.scss">
+    <link rel="stylesheet" href="sass/layouts/form.scss">
+    <link rel="stylesheet" href="sass/layouts/header.scss">
+    <link rel="stylesheet" href="sass/layouts/nav.scss">
+    <link rel="stylesheet" href="sass/main.scss">
+    <link rel="stylesheet" href="sass/pages/about.scss">
+    <link rel="stylesheet" href="sass/pages/project.scss">
+    <link rel="stylesheet" href="sass/pages/work.scss">
+    <link rel="stylesheet" href="sass/themes/themes.scss">
+    <link rel="stylesheet" href="sass/utils/extensions.scss">
+    <link rel="stylesheet" href="sass/utils/functions.scss">
+    <link rel="stylesheet" href="sass/utils/mixins.scss">
+    <link rel="stylesheet" href="sass/utils/variables.scss">
+    <link rel="stylesheet" href="sass/vendors/vendors.scss">
     <script src="https://kit.fontawesome.com/dd88d6c051.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="sass/base/base.scss" />
-    <link rel="stylesheet" href="sass/composants/composants.scss"/>
-    <link rel="stylesheet" href="sass/layouts/layouts.scss"/>
-    <link rel="stylesheet" href="sass/pages/pages.scss"/>
-    <link rel="stylesheet" href="sass/themes/themes.scss"/>
-    <link rel="stylesheet" href="sass/utils/variables.scss"/>
-    <link rel="stylesheet" href="sass/vendors/vendors.scss"/>
 </head>
 <body>
     <header>
         <img class="logo" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png">
     </header>
     <div id="entete">
-        <img
-            src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="louis hansel">
     </div>
-    <div id="menu">
+    <div class="principal">
         <h1>
             Le délice des sens
         </h1>
             <i class="far fa-heart"></i>
         <h3>Entrées</h3>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Tartare de thon</span>
             <span class="description">Assaisonné au yuzu</span>
-            25€
+            <span class="prix">25€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Bouchée de homard croustillant</span>
             <span class="description">Et sa farandole de petits légumes</span>
-            35€
+            <span class="prix">35€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Velouté de cèpes</span>
             <span class="description">Aux truffes</span>
-            20€
+            <span class="prix">20€</span>
         </div>
         <h3>Plats</h3>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Poulet rôti aux herbes de Provence</span>
             <span class="description">Et sa crème de truffe</span>
-            40€
+            <span class="prix">40€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Langouste rôtie</span>
             <span class="description">Et ses légumes de saison</span>
-            35€
+            <span class="prix">35€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Côte de boeuf Angus</span>
             <span class="description">Et sa purée de panais</span>
-            44€
+            <span class="prix">44€</span>
         </div>
         <h3>Desserts</h3>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette"> Farandole de desserts</span>
             <span class="description">Du chef</span>
-            18€
+            <span class="prix">18€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Crème brulée</span>
             <span class="description">Revisitée</span>
-            22€
+            <span class="prix">22€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Tiramisu</span>
             <span class="description"> À la noisette</span>
-            23€
+            <span class="prix">23€</span>
         </div>
+        <input class="buttonviolet" type="button" value="Commander" />
     </div>
     <footer>
-        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png">
+        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo">
         <ul>
             <li>
                 <i class="fas fa-utensils"></i>

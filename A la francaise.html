@@ -1,79 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <TITLE>a la francaise</TITLE>
+    <link rel="stylesheet" href="sass/base/base.scss">
+    <link rel="stylesheet" href="sass/base/typography.scss">
+    <link rel="stylesheet" href="sass/components/buttons.scss">
+    <link rel="stylesheet" href="sass/layouts/container.scss">
+    <link rel="stylesheet" href="sass/layouts/form.scss">
+    <link rel="stylesheet" href="sass/layouts/header.scss">
+    <link rel="stylesheet" href="sass/layouts/nav.scss">
+    <link rel="stylesheet" href="sass/main.scss">
+    <link rel="stylesheet" href="sass/pages/about.scss">
+    <link rel="stylesheet" href="sass/pages/project.scss">
+    <link rel="stylesheet" href="sass/pages/work.scss">
+    <link rel="stylesheet" href="sass/themes/themes.scss">
+    <link rel="stylesheet" href="sass/utils/extensions.scss">
+    <link rel="stylesheet" href="sass/utils/functions.scss">
+    <link rel="stylesheet" href="sass/utils/mixins.scss">
+    <link rel="stylesheet" href="sass/utils/variables.scss">
+    <link rel="stylesheet" href="sass/vendors/vendors.scss">
     <script src="https://kit.fontawesome.com/dd88d6c051.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="sass/base/base.scss" />
-    <link rel="stylesheet" href="sass/composants/composants.scss"/>
-    <link rel="stylesheet" href="sass/layouts/layouts.scss"/>
-    <link rel="stylesheet" href="sass/pages/pages.scss"/>
-    <link rel="stylesheet" href="sass/themes/themes.scss"/>
-    <link rel="stylesheet" href="sass/utils/variables.scss"/>
-    <link rel="stylesheet" href="sass/vendors/vendors.scss"/>
 </head>
+
+<!-- BODY -->
 <body>
+    <!-- HEADER -->
     <header>
-        <img class="logo" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png">
+        <img class="logo" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo">
     </header>
+    
     <div id="entete">
-        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"> 
+        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant1"> 
     </div>
-    <div id="menu">
+    
+    <!-- PRINCIPAL -->
+    <div class="principal">
         <h1>
             A la française
         </h1>
-            <i class="far fa-heart"></i>
-        </Titre>
+        <i class="far fa-heart"></i>
         <h3>Entrées</h3>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Tartare de poulpe acidulé</span>
             <span class="description">zestes d'orange</span>
-            25€
+            <span class="prix">25€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Velouté de légumes d'antan</span>
             <span class="description">Carotte, panais, topinambour</span>
-            35€
+            <span class="prix">35€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Soupe à l'oignon</span>
             <span class="description">Revisitée</span>
-            20€ 
+            <span class="prix">20€</span>
         </div>
         <h3>Plats</h3>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Coquilles Saint-Jacques</span>
             <span class="description"> Accompagnées d'une purée de panais</span>
-            40€
+            <span class="prix">40€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Magret de canard</span>
             <span class="description">Et parmentier de pommes de terre</span>
-            35€
+            <span class="prix">35€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Pigeonneau d’Ille-et-Vilaine</span>
             <span class="description">Sur son lit de gnocchis aux légumes</span>
-            44€
+            <span class="prix">44€</span>
         </div>
         <h3>Desserts</h3>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Pétales de violettes glacés</span>
             <span class="description">Et purée de noisettes</span>
-            18€
+            <span class="prix">18€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Fondant au chocolat</span>
             <span class="description">Revisité</span>
-            22€
+            <span class="prix">22€</span>
         </div>
-        <div classe=plats>
+        <div class="plats">
             <span class="titrerecette">Millefeuille croustillant</span>
             <span class="description">Myrtilles et pâte d’amande</span>
-            23€
+            <span class="prix">23€</span>
         </div>
+        <input class="buttonviolet" type="button" value="Commander" />
     </div>
+    
+    <!-- FOOTER -->
     <footer>
-        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png">
+        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo">
         <ul>
             <li>
                 <i class="fas fa-utensils"></i>
@@ -92,4 +115,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
