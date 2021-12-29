@@ -1,0 +1,69 @@
+/*
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('https://www.fontsquirrel.com/licence/Shrikhand') format(truetype);
+  src: url('https://www.fontsquirrel.com/license/roboto') format(truetype);
+}*/
+
+$grid-breakpoints: (
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px
+);
+
+body {
+  box-sizing: content-box;
+  width: 100%;
+  margin: 0;
+}
+
+
+footer{
+  background-color: $footer ;
+  .footerh1{
+    font-size: 20px;
+    color: white;
+    padding: 10px 35px;
+  }
+  
+h1,
+img{
+  font-family:shrikhand;
+}
+
+h1{
+  margin: 0;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+  max-width: fit-content;
+}
+
+h2,
+p{
+  font-family:roboto;
+}
+
+.logo {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+}
+
+  li{
+    color: white;
+    margin:7px 0px;
+  }
+}
+
+ul{
+  margin: 0px;
+  li{
+    list-style-type: none; 
+  }
+}

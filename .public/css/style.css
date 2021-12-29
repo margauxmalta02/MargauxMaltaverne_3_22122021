@@ -1,44 +1,76 @@
-h1, img {
+/*
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('https://www.fontsquirrel.com/licence/Shrikhand') format(truetype);
+  src: url('https://www.fontsquirrel.com/license/roboto') format(truetype);
+}*/
+body {
+  box-sizing: content-box;
+  width: 100%;
+  margin: 0;
+}
+
+footer {
+  background-color: #303030;
+}
+footer .footerh1 {
+  font-size: 20px;
+  color: white;
+  padding: 10px 35px;
+}
+footer h1,
+footer img {
   font-family: shrikhand;
 }
-
-h2, p {
+footer h1 {
+  margin: 0;
+}
+footer img {
+  width: 100%;
+  object-fit: cover;
+  max-width: fit-content;
+}
+footer h2,
+footer p {
   font-family: roboto;
 }
-
-.logo {
-  width: 200px;
-  height: auto;
+footer .logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 50%;
+  margin: 10px auto;
+}
+footer li {
+  color: white;
+  margin: 7px 0px;
 }
 
-@font-face {
-  font-family: "Shrikhand";
-  src: url("https://github.com/jonpinhorn/shrikhand") format(truetype);
-  src: url("https://www.fontsquirrel.com/license/roboto") format(truetype);
+ul {
+  margin: 0px;
 }
+ul li {
+  list-style-type: none;
+}
+
+.buttonviolet {
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 10px 35px;
+  border-radius: 25px;
+  color: white;
+}
+
 .header {
   display: block;
   margin: auto;
 }
 
-.header {
-  display: block;
-  margin: auto;
+.principal {
+  background-color: #EFEFEF;
+  display: grid;
+  grid-auto-flow: 3, 2fr;
 }
 
-@media (max-width: 414px) {
-  .header {
-    display: block;
-    margin: auto;
-  }
-
-  /* HEADER */
-  /* SEARCH */
-  /*RESTAURANTS */
-  /* FOOTER */
+.plat {
+  margin: 10px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
