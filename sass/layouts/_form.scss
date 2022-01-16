@@ -1,0 +1,8 @@
+@keyframes heart{
+    from{
+color: none;
+    }
+    to{
+background-image:linear-gradient($secondaire, $primaire) ;
+    }
+}

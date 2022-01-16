@@ -1,8 +1,124 @@
+/* COMMUN */
+
+
+
+/* ACCUEIL */
+#searchbar{
+    display: flex;
+    justify-content: center;
+    background-color:$buttonback;
+    height:35px;
+    width: 100%;
+    #champ{
+        border: none;
+        background-color:$buttonback;
+        margin-left: 15px;
+    }
+    >i{
+        padding-top: 10px;
+    }
+}
+
+.number{
+    display: block;
+    background-color:$primaire;
+    border-radius: 70%;
+    font-weight: bolder;
+    color: white;
+    width: 10px;
+    height: 10px;
+    padding:2px 5px 9px 6px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+#fonctionnement{
+    .all{
+        .searchbar{
+            display: flex;
+            background-color: $background;
+            border-radius: 15px;
+            box-shadow: 8px 8px 8px $ombre;
+            margin-bottom: 15px;
+            justify-content: space-between;
+            margin-left: 20px;
+            >i{
+                padding: 13px 10px 0px 20px;
+            }
+            p{
+                width: max-content;
+            }
+        }
+    } 
+}
+
 .principal{
     background-color: $background;
     display: grid;
+    padding: 10px;
+    .title{
+        display: flex;
+        justify-content: space-between;
+    }
+    article{
+        background-color: white;
+        max-width: fit-content;
+        border-radius: 15px;
+        margin-bottom: 20px ;
+    }
 }
 
-.plat{
-    margin:10px 0px;
+.ensemble{
+    display: flex;
+    .resto{
+        display: flex;
+        flex-direction: column; 
+        width: 300px;
+        padding-left: 15px;
+    }
+    h2{
+        margin:10px 0px
+    }
+    .heart{
+        padding-top:42px;
+        >i{
+            animation-name: heart;
+            animation-duration: 12s;
+        }
+    }
+}
+
+/* RESTAURANTS */
+
+.PLATS{
+    background: white;
+    margin: 5px 0px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 16px #d3d1d1;
+    .titrerecette{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .description{
+        color: #444;
+        font-size: 15px;
+    }
+    .prix{
+        font-weight: bolder;
+        float: right;
+        font-size: 15px;
+    }
+}
+
+#reserver{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 15px;
+    background-color: $background;
+    #sous{
+        padding: 0px 30px;
+        margin:  5px 0px;
+    }
 }

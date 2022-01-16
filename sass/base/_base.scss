@@ -20,41 +20,21 @@ body {
   margin: 0;
 }
 
-
 footer{
-  background-color: $footer ;
+  background-color: $footer;
+  padding: 15px 0px;
   .footerh1{
     font-size: 20px;
     color: white;
     padding: 10px 35px;
+    font-weight: initial;
   }
   
-h1,
-img{
-  font-family:shrikhand;
-}
-
-h1{
-  margin: 0;
-}
-
-img{
-  width: 100%;
-  object-fit: cover;
-  max-width: fit-content;
-}
-
-h2,
-p{
-  font-family:roboto;
-}
-
-.logo {
-  display: block;
-  width: 50%;
-  margin: 10px auto;
-}
-
+  h1,
+  img{
+    font-family:shrikhand;
+  }
+  
   li{
     color: white;
     margin:7px 0px;
@@ -66,4 +46,50 @@ ul{
   li{
     list-style-type: none; 
   }
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+  max-width: fit-content;
+}
+
+.logo {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+}
+
+h2,
+h3,
+p,
+.PLATS, 
+.titrerecette{
+  font-family:"roboto";
+}
+
+h1{
+  margin: 0;
+  font-family: 'Shrikhand';
+}
+
+h2{
+  font-size: 20px;
+}
+
+h3{
+  font-weight: lighter;
+}
+
+p{
+  font-size: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.lienblock{
+  display: block;
 }
