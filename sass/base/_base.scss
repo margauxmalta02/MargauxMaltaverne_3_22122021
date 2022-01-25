@@ -41,6 +41,10 @@ footer{
   }
 }
 
+article{
+  border-radius: 15px;
+}
+
 ul{
   margin: 0px;
   li{
@@ -52,12 +56,14 @@ img{
   width: 100%;
   object-fit: cover;
   max-width: fit-content;
+  height: 150px;
 }
 
 .logo {
   display: block;
   width: 50%;
   margin: 10px auto;
+  height: auto;
 }
 
 h2,
@@ -77,6 +83,10 @@ h2{
   font-size: 20px;
 }
 
+.partie{
+  padding:10px
+}
+
 h3{
   font-weight: lighter;
 }
@@ -92,4 +102,10 @@ a{
 
 .lienblock{
   display: block;
+}
+
+#heart{
+  padding-top: 7px;
+  font-size: 22px;
+  font-weight: normal;
 }

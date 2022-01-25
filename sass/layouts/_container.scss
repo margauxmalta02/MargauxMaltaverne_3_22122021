@@ -29,32 +29,41 @@
     height: 10px;
     padding:2px 5px 9px 6px;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 #fonctionnement{
+    padding:10px;
     .all{
         .searchbar{
             display: flex;
             background-color: $background;
             border-radius: 15px;
             box-shadow: 8px 8px 8px $ombre;
-            margin-bottom: 15px;
-            justify-content: space-between;
-            margin-left: 20px;
-            >i{
+            margin: 15px 30px;
+            justify-content: center;
+            &:hover{
+                background-color: $mix;
+            }
+            i{
                 padding: 13px 10px 0px 20px;
+                display: flex;
+                flex-basis: 13%;
+                color: $primaire;  
             }
             p{
-                width: max-content;
+                flex-basis: 70%;
+                display: flex;
+                justify-items: center;
             }
         }
     } 
 }
 
-.principal{
+.first{
     background-color: $background;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     .title{
         display: flex;
@@ -63,8 +72,34 @@
     article{
         background-color: white;
         max-width: fit-content;
-        border-radius: 15px;
-        margin-bottom: 20px ;
+        margin: 10px 10px 20px 10px;
+    }
+    img{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+}
+
+.principal{
+    background-color: $background;
+    display: grid;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    margin-top: -75px;
+    .title{
+        display: flex;
+        justify-content: space-between;
+    }
+    article{
+        background-color: white;
+        max-width: fit-content;
+        margin: 10px 10px 20px 10px;
+    }
+    img{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 }
 
@@ -73,20 +108,38 @@
     .resto{
         display: flex;
         flex-direction: column; 
-        width: 300px;
+        width: 286px;
         padding-left: 15px;
     }
     h2{
-        margin:10px 0px
+        margin:10px 0;
     }
     .heart{
-        padding-top:42px;
-        >i{
-            animation-name: heart;
-            animation-duration: 12s;
+        font-size: 26px;
+        background-color: white;
+        border: 0;
+        border-radius: 15px;
+        #plein{
+            display: none;
+        }
+        #vide{
+            display: block;
+        }
+        &:hover{
+            #vide{
+                display: none;
+            }
+            #plein{
+                color: $primaire;
+                display: block;
+                background: -webkit-linear-gradient(205deg, $primaire, $secondaire);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
 }
+
 
 /* RESTAURANTS */
 
