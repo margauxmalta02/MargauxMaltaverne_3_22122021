@@ -3,6 +3,7 @@
 
 
 /* ACCUEIL */
+
 #searchbar{
     display: flex;
     justify-content: center;
@@ -73,6 +74,15 @@
         background-color: white;
         max-width: fit-content;
         margin: 10px 10px 20px 10px;
+        .new{
+            color: #1d964f;
+            background-color: #7ee7aa;
+            position: relative;
+            padding: 7px;
+            top: 60px;
+            left: 233px;
+            width: 70px;
+        }
     }
     img{
         border-top-left-radius: 15px;
@@ -82,12 +92,10 @@
 
 .principal{
     background-color: $background;
-    display: grid;
     padding: 10px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    position: absolute;
-    margin-top: -75px;
+    display: grid;
     .title{
         display: flex;
         justify-content: space-between;
@@ -149,6 +157,8 @@
     padding: 10px 10px;
     border-radius: 15px;
     box-shadow: 4px 4px 16px #d3d1d1;
+    display: flex;
+    justify-content: space-between;
     .titrerecette{
         font-size: 20px;
         font-weight: bolder;
@@ -161,17 +171,34 @@
         font-weight: bolder;
         float: right;
         font-size: 15px;
+        border: none;
+        background: none;
+        padding-top: 15px;
     }
-}
-
-#reserver{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-left: 15px;
-    background-color: $background;
-    #sous{
-        padding: 0px 30px;
-        margin:  5px 0px;
+    .valide{
+        display: none;
+    }
+    &:hover{
+        .prix{
+            display: block;
+        }
+        .valide{
+            padding-top: 15px;
+            background-color: green;
+            color: white;
+            border: none;
+        }
+    }
+    
+    #reserver{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 15px;
+        background-color: $background;
+        #sous{
+            padding: 0px 30px;
+            margin:  5px 0px;
+        }
     }
 }
