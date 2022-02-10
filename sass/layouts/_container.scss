@@ -20,6 +20,22 @@
     }
 }
 
+#francaise{
+    @include imgback("../../MaquettesOhmyfood/MaquettesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+#delice{
+    @include imgback("../../MaquettesOhmyfood/MaquettesOhmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+#palette{
+    @include imgback("../../MaquettesOhmyfood/MaquettesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+#enchante{
+    @include imgback("../../MaquettesOhmyfood/MaquettesOhmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
 .number{
     display: block;
     background-color:$primaire;
@@ -77,25 +93,30 @@
         .new{
             color: #1d964f;
             background-color: #7ee7aa;
-            position: relative;
-            padding: 7px;
-            top: 60px;
-            left: 233px;
-            width: 70px;
+            width: 80px;
+            height: 30px;
+            float: left;
+            position: absolute;
+            margin: 10px 0 0 230Px;
+            padding: 10px 0 0 10px;
         }
     }
     img{
+        height: 200px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
 }
 
 .principal{
-    background-color: $background;
+    background-color: #f2f2f2;
     padding: 10px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     display: grid;
+    z-index: 1;
+    position: relative;
+    padding-top: 40px;
     .title{
         display: flex;
         justify-content: space-between;
@@ -108,6 +129,13 @@
     img{
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+    }
+    i{
+        font-size: 22px;
+        padding-top: 8px;
+    }
+    h3{
+        margin-bottom: 0;
     }
 }
 
@@ -173,7 +201,7 @@
         font-size: 15px;
         border: none;
         background: none;
-        padding-top: 15px;
+        padding-top: 25px;
     }
     .valide{
         display: none;
@@ -184,7 +212,7 @@
         }
         .valide{
             padding-top: 15px;
-            background-color: green;
+            background-color: #7ee7aa;
             color: white;
             border: none;
         }

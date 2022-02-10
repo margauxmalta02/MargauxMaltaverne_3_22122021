@@ -71,8 +71,7 @@ h3,
 p,
 .PLATS, 
 .titrerecette
-.new,
-{
+.new{
   font-family:"roboto";
 }
 
@@ -91,6 +90,7 @@ h2{
 
 h3{
   font-weight: lighter;
+  font-size: 18px;
 }
 
 p{
@@ -100,6 +100,18 @@ p{
 a{
   text-decoration: none;
   color: black;
+}
+
+hr{
+  background-color: #99e2d0;
+  height: 3px;
+  width: 40px;
+  margin-left: 2px;
+  border: none;
+}
+
+article{
+  margin: 0;
 }
 
 .lienblock{

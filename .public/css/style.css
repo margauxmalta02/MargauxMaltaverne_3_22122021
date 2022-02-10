@@ -246,13 +246,11 @@ article {
 .principal {
   background-color: #f2f2f2;
   padding: 10px;
-  padding-top: 10px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   display: grid;
   z-index: 1;
   position: relative;
-  bottom: 52px;
   padding-top: 40px;
 }
 .principal .title {
@@ -335,7 +333,7 @@ article {
   font-size: 15px;
   border: none;
   background: none;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 .PLATS .valide {
   display: none;
@@ -345,7 +343,7 @@ article {
 }
 .PLATS:hover .valide {
   padding-top: 15px;
-  background-color: green;
+  background-color: #7ee7aa;
   color: white;
   border: none;
 }
