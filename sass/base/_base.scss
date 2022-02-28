@@ -1,9 +1,11 @@
-/*
 @font-face {
+  font-family: 'roboto';
+  src: url('/roboto-1/Roboto-Regular.ttf') format(truetype);
+}
+@font-face{
   font-family: 'Shrikhand';
-  src: url('https://www.fontsquirrel.com/licence/Shrikhand') format(truetype);
-  src: url('https://www.fontsquirrel.com/license/roboto') format(truetype);
-}*/
+  src: url('/shrikhand/Shrikhand-Regular.otf') format(truetype);
+}
 
 $grid-breakpoints: (
 xs: 0,
@@ -72,7 +74,7 @@ p,
 .PLATS, 
 .titrerecette
 .new{
-  font-family:"roboto";
+  font-family: "roboto";
 }
 
 h1{

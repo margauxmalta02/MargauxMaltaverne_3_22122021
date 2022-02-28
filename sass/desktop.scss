@@ -1,0 +1,43 @@
+@media (min-width: 768px ){
+    #reserver{
+        padding-bottom:30px;
+        .buttonviolet{
+            width:230px;
+            margin: 0 auto;
+        }
+    }
+    .all{
+        justify-content: center;
+        display: flex;
+        .searchbar{
+            width:340px;
+        }
+        .partie{
+            text-align:center;
+        }
+    }
+    .first{
+        padding:0; 
+        article{
+            align-self: center;
+        }
+        #restaurants{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .number{
+        margin:28px 355px 0 20px;
+    }
+    .principal{
+        justify-content:center;
+        .buttonviolet{
+            align-self: center;
+            display:flex;
+        }
+        .PLATS{
+            width: 450px;
+        }
+    }
+}

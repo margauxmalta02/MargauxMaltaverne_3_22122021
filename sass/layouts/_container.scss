@@ -22,6 +22,9 @@
 
 #francaise{
     @include imgback("../../MaquettesOhmyfood/MaquettesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    top: 65px;
+    position: relative;
+    margin-top: -50px;
 }
 
 #delice{
@@ -34,6 +37,9 @@
 
 #enchante{
     @include imgback("../../MaquettesOhmyfood/MaquettesOhmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    img{
+        height: 252px;
+    }
 }
 
 .number{
@@ -98,7 +104,9 @@
             float: left;
             position: absolute;
             margin: 10px 0 0 230Px;
-            padding: 10px 0 0 10px;
+            padding: 10px 0 0 8px;
+            font-family: "roboto";
+            font-size: 15px;
         }
     }
     img{
@@ -120,6 +128,9 @@
     .title{
         display: flex;
         justify-content: space-between;
+        >i{
+            padding-right:15px;
+        }
     }
     article{
         background-color: white;
@@ -155,21 +166,22 @@
         background-color: white;
         border: 0;
         border-radius: 15px;
-        #plein{
+        padding-right: 20px;
+        .plein{
             display: none;
         }
-        #vide{
+        .vide{
             display: block;
         }
         &:hover{
-            #vide{
+            .vide{
                 display: none;
             }
-            #plein{
+            .plein{
                 color: $primaire;
                 display: block;
-                background: -webkit-linear-gradient(205deg, $primaire, $secondaire);
-                -webkit-background-clip: text;
+                background: linear-gradient(205deg, $primaire, $secondaire);
+                background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
@@ -182,51 +194,59 @@
 .PLATS{
     background: white;
     margin: 5px 0px;
-    padding: 10px 10px;
     border-radius: 15px;
     box-shadow: 4px 4px 16px #d3d1d1;
     display: flex;
     justify-content: space-between;
+    .command{
+        padding: 10px 0 10px 10px;
+    }
     .titrerecette{
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bolder;
+        padding: 10px 5px;
     }
     .description{
         color: #444;
-        font-size: 15px;
+        font-size: 14px;
+        padding: 10px 5px;
     }
-    .prix{
-        font-weight: bolder;
-        float: right;
-        font-size: 15px;
-        border: none;
-        background: none;
-        padding-top: 25px;
-    }
-    .valide{
-        display: none;
-    }
-    &:hover{
+    .animation{
+        display: flex;
         .prix{
-            display: block;
+            font-weight: bolder;
+            float: right;
+            font-size: 15px;
+            align-self: center;
+            padding-right: 10px;
+            &:hover + .valide{ 
+                display:block;
+                transition: all 4s;
+            }
+        }
+        &:hover .valide{ 
+            display:block;
+            transition: all 4s;
         }
         .valide{
-            padding-top: 15px;
+            padding: 10px 13px 5px 13px;
             background-color: #7ee7aa;
             color: white;
             border: none;
+            border-radius: 0 15px 15px 0;
+            display: none;
         }
     }
-    
-    #reserver{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-left: 15px;
-        background-color: $background;
-        #sous{
-            padding: 0px 30px;
-            margin:  5px 0px;
-        }
+}
+
+#reserver{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 15px;
+    background-color: $background;
+    #sous{
+        padding: 0px 30px;
+        margin:  5px 0px;
     }
 }

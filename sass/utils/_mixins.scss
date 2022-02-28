@@ -1,6 +1,9 @@
 @mixin imgback($url){
     background-image: url($url);
     background-repeat: no-repeat;
-    height: 252px;;
+    height: 252px;
     background-size: 100%;
+    top: 65px;
+    position: relative;
+    margin-top: -50px;
 }
